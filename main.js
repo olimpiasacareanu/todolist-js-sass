@@ -32,7 +32,7 @@ document.querySelector('form').addEventListener('submit', ()=>{
         }
         
         
-        // delete task on list-tasks and add task on checked-tasks
+        // move checked task and delete task from the list
         let listTask = document.querySelectorAll('li p')
         for(let j = 0; j<listTask.length; j++){
             listTask[j].addEventListener('click', function(){
