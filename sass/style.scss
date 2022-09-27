@@ -1,0 +1,93 @@
+$lime: #18E0CA;
+$lime-dark: #18E0CA;
+$rose: #DEA6DA;
+$green-light: #7BE0C0;
+$green-dark: #18E0CA;
+
+
+body{
+    background-color: #f1f1f1 !important;
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+h1{
+    text-align: center;
+    color: $lime-dark;
+    margin: 40px 0 !important;
+}
+
+%btn-border{
+    border-radius: 0;
+    border: 1px solid $rose;
+}
+
+form{
+    display: flex;
+    margin-bottom: 30px;
+    .submit{
+        padding: 12px;
+        width: 20%;
+        background-color: $rose;
+    }
+    input{
+        @extend %btn-border;
+        padding: 12px;
+        width: 80%;
+    }
+    
+    
+}
+
+.list{
+    
+    ul{
+        padding: 0;
+    }
+    ul li{
+        display: flex;
+        width: 100%;
+        list-style-type: square !important;
+        background-color: #ffffff;
+        border: 1px solid rgb(235, 235, 235);
+        padding: 10px;
+        cursor: pointer;
+        p{
+            width: 100%;
+            margin: 0;
+        }
+    }
+    button{
+        background-color: $rose;
+        padding: 2px 15px !important;
+        @extend %btn-border;
+        flex: right;
+    }
+
+    h5{
+        color: $rose;
+        padding-bottom: 30px;
+    }
+
+}
+
+
+
+.addTask:focus{
+    border-radius: 0 !important;
+    border-color: $rose !important;
+    background-color: #e8fffc !important;
+}
+
+.check{
+    h6{
+        display: none;
+        color: $lime
+    }
+    @extend .list;
+}
+
+.addTask:focus{
+    background-color: #f2f2f2;
+    outline: none !important;
+}
+

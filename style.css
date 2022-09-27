@@ -1,0 +1,73 @@
+body {
+  background-color: #f1f1f1 !important;
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+h1 {
+  text-align: center;
+  color: #18E0CA;
+  margin: 40px 0 !important;
+}
+
+.list button, .check button, form input {
+  border-radius: 0;
+  border: 1px solid #DEA6DA;
+}
+
+form {
+  display: flex;
+  margin-bottom: 30px;
+}
+form .submit {
+  padding: 12px;
+  width: 20%;
+  background-color: #DEA6DA;
+}
+form input {
+  padding: 12px;
+  width: 80%;
+}
+
+.list ul, .check ul {
+  padding: 0;
+}
+.list ul li, .check ul li {
+  display: flex;
+  width: 100%;
+  list-style-type: square !important;
+  background-color: #ffffff;
+  border: 1px solid rgb(235, 235, 235);
+  padding: 10px;
+  cursor: pointer;
+}
+.list ul li p, .check ul li p {
+  width: 100%;
+  margin: 0;
+}
+.list button, .check button {
+  background-color: #DEA6DA;
+  padding: 2px 15px !important;
+  flex: right;
+}
+.list h5, .check h5 {
+  color: #DEA6DA;
+  padding-bottom: 30px;
+}
+
+.addTask:focus {
+  border-radius: 0 !important;
+  border-color: #DEA6DA !important;
+  background-color: #e8fffc !important;
+}
+
+.check h6 {
+  display: none;
+  color: #18E0CA;
+}
+
+.addTask:focus {
+  background-color: #f2f2f2;
+  outline: none !important;
+}
+
+/*# sourceMappingURL=style.css.map */
